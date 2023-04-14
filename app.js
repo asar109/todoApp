@@ -24,4 +24,8 @@ app.use(cors())
 
 app.use("/api/v1", userRoutes);
 
+app.get('/' , ()=>{
+    res.send("Server is working fine")
+})
+
 module.exports = app;
